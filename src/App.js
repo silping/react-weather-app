@@ -13,10 +13,10 @@ function App() {
         <WeatherOverview />
         <Forecast />
       </header>
-      <small>
+      <footer>
         <a href="https://github.com/miss-ping/react-weather-app">Open source</a>{" "}
         coded by Sílvia Ping
-      </small>
+      </footer>
     </div>
   );
 }
