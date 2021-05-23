@@ -13,7 +13,9 @@ function App() {
         <WeatherOverview />
         <Forecast />
       </header>
-      <small>Open source coded by Sílvia Ping</small>
+      <small>
+        <a href="">Open source</a> coded by Sílvia Ping
+      </small>
     </div>
   );
 }
