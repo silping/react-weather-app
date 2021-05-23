@@ -14,7 +14,8 @@ function App() {
         <Forecast />
       </header>
       <small>
-        <a href="">Open source</a> coded by Sílvia Ping
+        <a href="https://github.com/miss-ping/react-weather-app">Open source</a>{" "}
+        coded by Sílvia Ping
       </small>
     </div>
   );
