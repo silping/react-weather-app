@@ -1,33 +1,48 @@
 body {
   background-color: #fff;
 }
-
-.App {
-  margin: 20px auto;
-  max-width: 500px;
-}
-
-.App-content {
-  padding: 20px 20px;
-  text-align: center;
-  background-color: #fff;
-  align-items: center;
-  color: #5c8d89;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  border: 1px solid #d8e2dc;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-ul {
-  margin: 30px auto;
-  text-decoration: none;
-  text-align: left;
-  font-size: 12px;
-}
 footer {
   color: #5c8d89;
   margin-top: 10px;
   padding-left: 10px;
   font-size: 12px;
+}
+ul {
+  margin: 30px auto;
+  list-style: none;
+  text-align: left;
+  font-size: 14px;
+  padding-left: 0;
+}
+
+.App {
+  margin: 20px auto;
+  max-width: 500px;
+}
+.App-content {
+  background-color: #fff;
+  border: 1px solid #d8e2dc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: #5c8d89;
+  padding: 20px 20px;
+}
+.date {
+  font-size: 14px;
+  padding-left: 6px;
+  color: #6ca36e;
+}
+h5 {
+  text-align: center;
+  margin-top: 20px;
+}
+.temp {
+  text-align: right;
+}
+.temperature {
+  font-size: 64px;
+}
+.units {
+  position: relative;
+  top: -30px;
 }

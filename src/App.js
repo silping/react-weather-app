@@ -11,7 +11,7 @@ function App() {
         <header className="App-content">
           <Date />
           <SearchForm />
-          <WeatherOverview />
+          <WeatherOverview defaultCity="New York" />
           <Forecast />
         </header>
         <footer>
