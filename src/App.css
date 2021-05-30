@@ -36,6 +36,10 @@ h5 {
   text-align: center;
   margin-top: 20px;
 }
+canvas {
+  display: block;
+  margin: 10px auto;
+}
 .temp {
   text-align: right;
 }

@@ -18,6 +18,7 @@ export default function WeatherOverview(props) {
       maxTemp: response.data.main.temp_max,
       minTemp: response.data.main.temp_min,
       date: new Date(response.data.dt * 1000),
+      icon: response.data.weather[0].icon,
     });
   }
 
