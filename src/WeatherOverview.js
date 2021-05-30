@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import ReactAnimatedWeather from "react-animated-weather";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function WeatherOverview(props) {
   const [weatherData, setweatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-    console.log(response.data);
     setweatherData({
       ready: true,
       temperature: response.data.main.temp,
@@ -16,16 +16,18 @@ export default function WeatherOverview(props) {
       humidity: response.data.main.humidity,
       maxTemp: response.data.main.temp_max,
       minTemp: response.data.main.temp_min,
+      date: new Date(response.data.dt * 1000),
     });
   }
 
   if (weatherData.ready) {
     return (
       <div className="WeatherOverview">
+        <FormattedDate date={weatherData.date} />
         <div className="row">
           <div className="col-12">
             <h5 className="cityName">
-              {weatherData.city}, {weatherData.description}
+              <strong>{weatherData.city}</strong>, {weatherData.description}
             </h5>
           </div>
         </div>
@@ -63,8 +65,8 @@ export default function WeatherOverview(props) {
   } else {
     const apiKey = "51c757e95cb1fdd4bc45100437afbefb";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
 
+    axios.get(apiUrl).then(handleResponse);
     return "Loading...";
   }
 }

@@ -1,5 +1,4 @@
 import "./App.css";
-import Date from "./Date";
 import SearchForm from "./SearchForm";
 import WeatherOverview from "./WeatherOverview";
 import Forecast from "./Forecast";
@@ -9,7 +8,6 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-content">
-          <Date />
           <SearchForm />
           <WeatherOverview defaultCity="New York" />
           <Forecast />
