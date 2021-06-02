@@ -7,13 +7,6 @@ footer {
   padding-left: 10px;
   font-size: 12px;
 }
-ul {
-  margin: 30px auto;
-  list-style: none;
-  text-align: left;
-  font-size: 14px;
-  padding-left: 0;
-}
 
 .App {
   margin: 20px auto;
@@ -27,27 +20,7 @@ ul {
   color: #5c8d89;
   padding: 20px 20px;
 }
-.date {
-  font-size: 14px;
-  padding-left: 6px;
-  color: #6ca36e;
-}
-h5 {
-  text-align: center;
-  margin-top: 20px;
-}
-canvas {
-  display: block;
-  margin: 10px auto;
-  padding-top: 20px;
-}
+
 .temp {
   text-align: right;
-}
-.temperature {
-  font-size: 64px;
-}
-.units {
-  position: relative;
-  top: -30px;
 }

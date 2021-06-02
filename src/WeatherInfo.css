@@ -1,0 +1,15 @@
+.weatherInfo ul {
+  margin: 30px auto;
+  list-style: none;
+  text-align: left;
+  font-size: 14px;
+  padding-left: 0;
+}
+.weatherInfo h5 {
+  text-align: center;
+  margin-top: 20px;
+}
+canvas {
+  display: block;
+  margin: 10px auto;
+}
